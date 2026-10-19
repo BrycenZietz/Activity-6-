@@ -1,0 +1,171 @@
+/* Changed Arial and gray to Tahoma and sand */
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #293e53;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3efe7;
+}
+
+/* Main box with rounder corners */
+.todo-container {
+    background-color: #fffdf8;
+    border-radius: 14px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Space below the input area */
+.input-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ded6c8;
+}
+
+/* Input heading */
+.input-section h2 {
+    color: #293e53;
+    margin-bottom: 15px;
+}
+
+/* Task input size and border */
+#taskInput {
+    padding: 12px 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 2px solid #c6bca9;
+    border-radius: 8px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+/* Highlights the selected input */
+#taskInput:focus {
+    outline: none;
+    border-color: #345773;
+}
+
+/* Changed green buttons to navy */
+button {
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    background-color: #345773;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Darkens the button on hover */
+button:hover {
+    background-color: #254159;
+}
+
+/* Task list heading */
+.list-section h2 {
+    color: #293e53;
+    margin-bottom: 15px;
+}
+
+/* Smaller task count */
+#taskCount {
+    font-size: 0.8em;
+    color: #5e6872;
+    font-weight: normal;
+}
+
+/* Removes list bullets and spacing */
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Task row layout */
+.task-item {
+    background-color: #faf6ee;
+    border: 1px solid #d9cfbd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Highlights the hovered task */
+.task-item:hover {
+    background-color: #ded6c8;
+    transform: translateY(-1px);
+}
+
+/* Blue shading and crossed-out completed tasks */
+.task-item.done {
+    background-color: #dce8ef;
+    color: #294b61;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Completed task hover color */
+.task-item.done:hover {
+    background-color: #cbdde8;
+}
+
+/* Lets task text fill the row */
+.task-text {
+    flex-grow: 1;
+}
+
+/* Status label size and shape */
+.task-status {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+/* Gold pending label */
+.status-pending {
+    background-color: #f2dfb4;
+    color: #71521d;
+}
+
+/* Blue completed label */
+.status-done {
+    background-color: #c4dce9;
+    color: #244c63;
+}
+
+/* Space and divider above totals */
+.stats-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ded6c8;
+    text-align: center;
+}
+
+/* Statistics text */
+#taskStats {
+    font-size: 1.1em;
+    color: #5e6872;
+}
+/* Small red Delete button */
+.delete-btn {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #dc3545;
+}
+
+/* Darkens on hover */
+.delete-btn:hover {
+    background-color: #c82333;
+}
